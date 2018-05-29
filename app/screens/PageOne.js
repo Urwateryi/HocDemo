@@ -16,7 +16,7 @@ export default class PageOne extends PureComponent {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.txt}>PageOne</Text>
+                <Text style={styles.txt} onPress={this.props.handleClick}>PageOne</Text>
             </View>
         );
     }

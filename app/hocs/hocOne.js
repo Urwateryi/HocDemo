@@ -11,14 +11,13 @@ const hocOne = WrappedComponent => class extends Component {
 
     constructor(props) {
         super(props);
-        console.log('propsProxyHoc constructor');
         this.state = {
             showLoad : true,
         };
     }
 
     handleClick() {
-        ToastAndroid.show('click from hocOne');
+        console.log('click from hocOne')
     }
 
     componentWillMount() {
